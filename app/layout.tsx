@@ -32,7 +32,6 @@ export default function RootLayout({
       <body className={inter.className}>
         <MantineProvider 
           theme={theme}
-          defaultColorScheme="light"
         >
             <HeaderLayout>{ children }</HeaderLayout>
           </MantineProvider>

@@ -25,7 +25,7 @@ export default function Catalog({ category, data, filterTypes }: Props) {
                 spacing={{ base: 12, sm: 12 }}
             >
                 {results.map(r => {
-                    return <Card name={r.name} type={r.type} description={r.description} /> })}
+                    return <Card key={r.name} name={r.name} type={r.type} description={r.description} /> })}
             </SimpleGrid>
         </div>
   );
