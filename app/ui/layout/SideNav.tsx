@@ -38,7 +38,7 @@ export default function SideNav({ isOpen, onToggleNav }: Props) {
         <div
             className={`${
             isOpen ? 'w-full sm:w-64' : 'w-16'
-            } border-r px-4 m-0 ease-in-out`}
+            } sticky top-14 h-screen max-h-screen flex-none border-r px-4 m-0 ease-in-out`}
         >
             <nav className="">
                 <div className="flex items-center justify-end">

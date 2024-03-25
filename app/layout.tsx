@@ -5,6 +5,7 @@ import '@mantine/core/styles.css';
 import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
 import { theme } from "@/theme";
 import SideNavLayout from "@/app/ui/layout/SideNavLayout";
+import HeaderLayout from "./ui/layout/HeaderLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +34,7 @@ export default function RootLayout({
           theme={theme}
           defaultColorScheme="light"
         >
-            <SideNavLayout>{ children }</SideNavLayout>
+            <HeaderLayout>{ children }</HeaderLayout>
           </MantineProvider>
       </body>
     </html>

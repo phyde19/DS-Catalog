@@ -23,3 +23,9 @@ export const searchParamsToTypes = (searchParams: ReadonlyURLSearchParams): Type
         }
     });
 }
+
+export const searchParamsToTypeNames = (searchParams: ReadonlyURLSearchParams): string[] => {
+    return Array.from(searchParams.entries())
+        .filter(([k, v]) => v === 'true')
+        .map(([k, v]) => k);
+}
