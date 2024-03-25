@@ -2,7 +2,7 @@
 
 A proof-of-concept frontend catalog application showcasing various data science-related items and products. Built with Next.js and styled using Tailwind CSS.
 
-View a live demo [here!](ds-catalog-git-main-parker-hydes-projects.vercel.app)
+View a live demo [here!](https://ds-catalog-git-main-parker-hydes-projects.vercel.app)
 
 ## Features
 
