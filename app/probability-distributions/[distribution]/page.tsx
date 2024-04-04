@@ -9,7 +9,7 @@ export default function Page({ params }: { params: { distribution: string } }) {
     return (
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <button
-                className="flex"
+                className="flex bg-transparent"
                 onClick={() => router.back()}
             >
                 <ArrowLeftIcon className="w-6 h-6 mr-4"></ArrowLeftIcon>

@@ -3,5 +3,8 @@
 import { createTheme } from '@mantine/core';
 
 export const theme = createTheme({
-  /* Put your mantine theme override here */
+  breakpoints: {
+    lg: "1220px",
+    xl: "1460px"
+  }
 });

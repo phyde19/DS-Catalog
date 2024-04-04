@@ -1,3 +1,5 @@
+'use client'
+
 import { Result } from "@/app/lib/mockData"
 import { SimpleGrid } from "@mantine/core";
 import { useEffect, useState } from "react";
@@ -12,8 +14,6 @@ type Props = {
 
 export default function Catalog({ category, data, filterTypes }: Props) {
     const [results, setResults] = useState<Result[]>([]);
-    console.log(data);
-    console.log(filterTypes);
     
     const [search, setSearch] = useState('');
 
@@ -48,7 +48,7 @@ export default function Catalog({ category, data, filterTypes }: Props) {
             </div>
             <SimpleGrid
                 className="mt-8"
-                cols={{ base: 1, sm: 2, lg: 5 }}
+                cols={{ base: 1, sm: 2, md: 3, lg:4, xl: 5 }}
                 spacing={{ base: 12, sm: 12 }}
             >
                 {results.map(r => {

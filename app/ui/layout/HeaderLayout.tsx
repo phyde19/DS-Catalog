@@ -12,7 +12,7 @@ export default function HeaderLayout({ children }: { children: React.ReactNode }
           DataScience Catalog
         </span>
       </div>
-      <div className="bg-white flex flex-grow items-start">
+      <div className="flex flex-grow items-start">
         { children }
       </div>
     </div>
